@@ -65,18 +65,6 @@
 
 <p style="font-size:14px"> * : hub/notebooks/lab/kernels </p>
 
-<aside class="notes">
-
-<ul>
-  <li>Thanks florian for the introduction and for organizing these seminar series. It came in the right time actually.</li>
-  <li>As you might know, a week ago we deployed a new Jupyterhub at the DKRZ and we thought we can use this opportunity to introduce the new release.</li>
-  <li>hello everyone, thank you for your interest to watching now or later since the video is recorded.</li>
-  <li>My name is Sofiane Bendoukha.</li>
-  <li>The focus today is on Jupyterhub. I think there will be more interesting  talks/handsons related to jupyter in the future dealing with use cases or software packages.</li>
-</ul>
-
-</aside>
-
 </section>
 <section>
 <section>
@@ -127,14 +115,6 @@ Complex is better than complicated.
 
 <p><img src="images/history_python.png" alt="" width="900px" style="border:none"></p>
 
-<aside class="notes">
-
-<p>the popularity of jupyter among researchers or data scientists is strongly related to Python, even if one can use different languages.<br>
-this slides shows the ranking of Python and its progress. we see clearly how python progressed <br>
-over the years. This was from last month.</p>
-
-</aside>
-
 </section>
 <section>
 
@@ -150,35 +130,6 @@ over the years. This was from last month.</p>
 </table>
 
 <p><small><strong>web application</strong> that allows you to <strong>create</strong> and <strong>share</strong> documents that contain <strong>live code</strong>, equations, <strong>visualizations</strong>.</small></p>
-
-<aside class="notes">
-
-<ul>
-  <li>for data scientists, Jupyter has emerged as de facto standard when working interactively with python.
-    <ol>
-      <li>released in 2014, Jupyter Notebook is an open-source web application for<br>
-creating reproducible computational narratives.</li>
-    </ol>
-  </li>
-  <li>this a document that contain live code, equations,<br>
-narrative text, visualizations, rich media</li>
-  <li>easily shared with others</li>
-  <li>convert to PDF, HTML, LaTeX</li>
-  <li>The working environment includes
-    <ul>
-      <li>in-browser terminal</li>
-      <li>file browsing</li>
-      <li>support for many languages: Python, R, Julia, C++, …</li>
-      <li>extensible design</li>
-      <li>many server/client plugins</li>
-    </ul>
-  </li>
-</ul>
-
-<p>2- Architecture of a jupyter notebook interface: The notebook server is responsible for saving and loading notebooks.<br>
-The Kernel just gets sent cells of code when the user runs them and send results back.</p>
-
-</aside>
 
 </section>
 <section>
@@ -208,19 +159,6 @@ Using Anaconda, anyone can install and run Jupyter Notebooks on their local comp
 6. Open Jupyter notebook with your "Local" browser
 </code></pre>
 
-<aside class="notes">
-
-<ol>
-  <li>local</li>
-  <li>However, in order to run Jupyter Notebooks on a remote shared resource like our HPC, some additional steps are involved:<br>
- one would need to log into the HPC cluster, use the command-line to reserve computing resources and set up some SSH tunneling.<br>
- The complexity of an HPC environment may include other steps related to some security set up, mounting/loading directories from shared file system.</li>
-  <li>some steps to start notebook</li>
-  <li>A more convenient way to run Jupyter Notebooks on a shared resource is using JupyterHub.<br>
-Its saves time and provides some abstraction level to the users.</li>
-</ol>
-
-</aside>
 
 </section>
 <section>
@@ -249,29 +187,12 @@ Its saves time and provides some abstraction level to the users.</li>
   </li>
 </ul>
 
-<aside class="notes">
-
-<p>so at DKRZ we provide:</p>
-
-</aside>
-
 </section>
 <section>
 
 <h3><strong>Roadmap</strong></h3>
 
 <p><img src="images/roadmap.png" alt="" width="400%" style="border:none"></p>
-
-<aside class="notes">
-
-<p>this only shows some progress events:</p>
-<ol>
-  <li>we had already a jupyterhub server runnign quite well and also a the ssh script</li>
-  <li>in the end of 2019 it was decided to improve the current installation and bring more new features</li>
-  <li>in the beginning it was hard to work on the same machine so we decided to start from scratch and jh has its own machine</li>
-</ol>
-
-</aside>
 
 </section>
 <section>
@@ -280,11 +201,6 @@ Its saves time and provides some abstraction level to the users.</li>
 
 <p><img src="images/whatsnew.png" alt="" style="border:none"></p>
 
-<aside class="notes">
-
-<p>so whats new in the new release?</p>
-
-</aside>
 
 </section>
 <section>
@@ -328,11 +244,6 @@ Its saves time and provides some abstraction level to the users.</li>
 
 <p><img src="images/gui.png" alt="" style="border:none;" height="520" width="920"></p>
 
-<aside class="notes">
-
-<p>customize login and other pages.</p>
-
-</aside>
 
 </section>
 <section>
@@ -368,11 +279,6 @@ Its saves time and provides some abstraction level to the users.</li>
 
 <p><img src="images/jlab.png" alt="" style="border:none"></p>
 
-<aside class="notes">
-
-<p>one more thing, Jupyterlab is available for both spawners. It is even possible to use the options form to choose between the interfaces when you start your session.</p>
-
-</aside>
 
 </section>
 <section>
@@ -383,12 +289,6 @@ Its saves time and provides some abstraction level to the users.</li>
 
 <p><img src="images/lab-tree.gif" alt="" width="950px" height="450px" style="border:none"></p>
 
-<aside class="notes">
-
-<p>switching betwenn the interfaces is possible and very easy. You just need to modify the url.<br>
-For example this animation shows hot to switch from the classic to lab and vice versa.</p>
-
-</aside>
 
 </section>
 </section>
@@ -424,12 +324,6 @@ For example this animation shows hot to switch from the classic to lab and vice 
 <p><br><br>
 <img src="images/spawning_overview.png" alt="" style="border:none"></p>
 
-<aside class="notes">
-
-<p>Once you login, there are two tabs where you can choose between preset or advanced options form.<br>
-These are two different spawners to customize your session: this means what are the resources that will be allocated to your jupyter notebook (memory, CPUs, time. etc).</p>
-
-</aside>
 
 </section>
 <section>
@@ -449,21 +343,6 @@ These are two different spawners to customize your session: this means what are 
   </tbody>
 </table>
 
-<aside class="notes">
-
-<ol>
-  <li>in the preset form we already configured some profiles with the most important Slurm options (cores, memory and time). In the right side you see the available profiles.<br>
-Depending on what you want to do you just pick the one you think it fits your requirements.
-    <ul>
-      <li>shared partition; small development/testing projects &lt;/small&gt;</li>
-      <li>prepost: as before, but allowing access outside of mistral (wget or similar)</li>
-    </ul>
-  </li>
-</ol>
-
-<p>The other fields are not mandatory (reservation and qos).</p>
-
-</aside>
 
 </section>
 <section>
@@ -472,17 +351,7 @@ Depending on what you want to do you just pick the one you think it fits your re
 
 <p><img src="images/advanced_explained.png" alt="advanced" width="780" style="border:none"></p>
 
-<aside class="notes">
 
-<p>for advanced users we have the advanced spawner options. this options form allows you to customize many parameters.<br>
-for example, you can:</p>
-<ul>
-  <li>choose which jupyter interface to start with (classic or lab)</li>
-  <li>modify slurm parameters</li>
-  <li>rename the log file</li>
-</ul>
-
-</aside>
 
 </section>
 <section>
@@ -491,11 +360,6 @@ for example, you can:</p>
 
 <p><img src="images/advanced_desc.png" alt="advanced" width="700" style="border:none"></p>
 
-<aside class="notes">
-
-<p>This table just shows the parameters and their descriptions, this available in the documentation.</p>
-
-</aside>
 
 </section>
 <section>
@@ -522,16 +386,6 @@ for example, you can:</p>
 
 <p class="fragment"><img src="images/mistral-conf.png" alt="" style="border:none"></p>
 
-<aside class="notes">
-
-<ul>
-  <li>most of the errors that you might see with the advanced spaner are due to a misconfiguration of the slurm parameters.<br>
-in this case you will see something like this: sbatch error. <br>
-for some fields there is an information about the origin of the error (cpu, memory).</li>
-  <li>For the other fields I suggest that you take a look first at the Mistral configuration page. there you will see the available partitions with their resources.</li>
-</ul>
-
-</aside>
 
 </section>
 <section>
@@ -557,11 +411,6 @@ for some fields there is an information about the origin of the error (cpu, memo
 </tr>
 </table>
 
-<aside class="notes">
-
-<p>this is not a new feature for our deployment but a new feature from the jupyterhub package itself.</p>
-
-</aside>
 
 </section>
 <section>
@@ -570,15 +419,6 @@ for some fields there is an information about the origin of the error (cpu, memo
 
 <p><img src="images/stop_server.gif" alt="" style="border:none" width="950px"></p>
 
-<aside class="notes">
-
-<ul>
-  <li>loging out or closing your browser won’t stop your session automatically.</li>
-  <li>your notebook is running as Slurm job, if you finish your work you need to explictly stop the server, otherwise it will continue consuming the allocated resource.</li>
-  <li>as you can see in the animation, stoping the server depends on how you start it: preset or advanced ans also the interface …</li>
-</ul>
-
-</aside>
 
 </section>
 </section>
@@ -591,18 +431,6 @@ for some fields there is an information about the origin of the error (cpu, memo
 
 <p><img src="images/kernels.png" alt="" style="border:none"></p>
 
-<aside class="notes">
-
-<p>The Kernel is the compute engine of the Jupyter notebook.</p>
-
-<ul>
-  <li>accepts messages</li>
-  <li>performs actions</li>
-  <li>sends out results</li>
-</ul>
-
-</aside>
-
 </section>
 <section>
 
@@ -610,12 +438,6 @@ for some fields there is an information about the origin of the error (cpu, memo
 
 <p><img src="images/kernels_sequence.png" alt="" width="650px" height="520px" style="border:none"></p>
 
-<aside class="notes">
-
-<p>this sequence only shows us what the communication process between the import parts of a Jupyter notebook. <br>
-Concretly it shows the intercation between broweser, notebook server and kernel when the user type something in a cell.</p>
-
-</aside>
 
 </section>
 <section>
@@ -653,13 +475,6 @@ Concretly it shows the intercation between broweser, notebook server and kernel 
 
 <p><span><small>"We will have a new Python about every half year, which is going to be called 'python3/YYYY.MM-compilerversion'. The first one is 'python3/2020.02-gcc-9.1.0'".</small></span></p>
 
-<aside class="notes">
-
-<p>We have various kernels automatically installed.<br>
-Propably we are going to remove the python2.7 kernels, python2.7 is no longer maintained.<br>
-The most recent module can also be accessed via the shortcut ‘python3/unstable’</p>
-
-</aside>
 
 </section>
 <section>
@@ -685,17 +500,6 @@ The most recent module can also be accessed via the shortcut ‘python3/unstable
 </code></pre>
   </li>
 </ul>
-
-<aside class="notes">
-
-<ol>
-  <li>If you have your own Python environment, depending on how it is installed, it may just show up in the list of kernels you can use. <br>
-If not, use the following procedure (also documented in the technical documentation) to enable a custom kernel based on a Conda/virtualenv environment. You need to restart your seesion to enable the new changes.</li>
-  <li>To use conda binary you need to load one of our system python modules (python3/unstable)</li>
-  <li>best practices –&gt; where to create the new env.</li>
-</ol>
-
-</aside>
 
 </section>
 <section>
@@ -747,13 +551,6 @@ If not, use the following procedure (also documented in the technical documentat
 
 <p class="fragment fade-in"><em>more advanced</em>: use executable scripts! --&gt; <a href="https://jupyterhub.gitlab-pages.dkrz.de/jupyterhub-docs/kernels.html">check the doc</a></p>
 
-<aside class="notes">
-
-<p>Now, let’s say that you need additional excutables, in this case it is possible to customize your new installed kernel by extending the kernel specification file.<br>
-This file is generated when you install the kernel as I explained in the previous slide. Generally in .local/share/jupyter.<br>
-There are other tricks to optimize this process they are described in the documentation.</p>
-
-</aside>
 
 </section>
 <section>
@@ -792,16 +589,6 @@ There are other tricks to optimize this process they are described in the docume
 
 <p><img class="fragment fade-in" src="images/help.png" width="400px" style="border:none"></p>
 
-<aside class="notes">
-
-<ol>
-  <li>When you launch Jupyter notebooks on mistral. Logs are saved files in your HOME directory. These logs can be very helpful when it comes to debugging issues with Jupyter, your custom kernels, or your Python environment.</li>
-  <li>The name of the log file is related to the spawner options form you used: preset or advanced.</li>
-  <li>support@dkrz.de</li>
-  <li>you can control the verbosity or logging level by modyfing the jupyter_notebook_config file in your home. c.Application.log_level.</li>
-</ol>
-
-</aside>
 
 </section>
 </section>
@@ -822,11 +609,6 @@ There are other tricks to optimize this process they are described in the docume
 
 <p><img src="images/nbextensions.png" alt="" style="border:none"></p>
 
-<aside class="notes">
-
-<p>jupyter notebook extensions are kind of add-ons to extend the basic environment of a jupyter notebook.</p>
-
-</aside>
 
 </section>
 <section>
@@ -850,9 +632,6 @@ There are other tricks to optimize this process they are described in the docume
 <pre><code>jupyter nbextension disable &lt;nbextension require path&gt;
 </code></pre>
 
-<aside class="notes">
-
-</aside>
 
 </section>
 <section>
@@ -863,11 +642,6 @@ There are other tricks to optimize this process they are described in the docume
 
 <p><img src="images/mask-ml.gif" alt="Dask Labextension" width="900px" height="430px" style="border:none"></p>
 
-<aside class="notes">
-
-<p>Dask is an awesome tool to help you both visualize what’s happening computationally when you run your code,</p>
-
-</aside>
 
 </section>
 <section>
@@ -927,16 +701,6 @@ There are other tricks to optimize this process they are described in the docume
   <li>Binder for Mistral?</li>
 </ol>
 
-<aside class="notes">
-
-<ol>
-  <li>this slides only shows the things that we are working on or thinking about how to improve the existing features.</li>
-  <li>Currently, there are some users complaining about Jupyterhub/Python being slow on Mistral. <br>
- Actually the problem does not come from the server itselfs but where from the modules. We are aware of that already and we are working on a better <br>
- solution to make loading Python more faster.</li>
-</ol>
-
-</aside>
 
 </section>
 <section>
@@ -951,13 +715,6 @@ There are other tricks to optimize this process they are described in the docume
   <li>support@dkrz.de</li>
 </ul>
 
-<aside class="notes">
-
-<p>Thats all for me.<br>
-if you have any feedback or question<br>
-Back to you florian.</p>
-
-</aside>
 
 </section>
 </section>
