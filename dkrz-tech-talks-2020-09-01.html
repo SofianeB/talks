@@ -734,19 +734,20 @@ Using Anaconda, anyone can install and run Jupyter Notebooks on their local comp
   var baseOptions = {
     transition: 'no',
     hash: true,
-    plugins: [ RevealHighlight ],
     dependencies: [
       { src: 'reveal.js/plugin/markdown/markdown.js' },
-      { src: 'reveal.js/plugin/highlight/highlight.js', async: true },
+      { src: 'reveal.js/plugin/highlight/highlight.js' },
       { src: 'reveal.js/plugin/notes/notes.js', async: true }
     ]
   };
 
 
   var configOptions = {"width":1200,"margin":0.1,"minScale":0.2,"maxScale":1.5,"slideNumber":true,"showSlideNumber":"all","showNotes":false,"display":"block","center":false,"autoAnimate":true,"pdfSeparateFragments":true,"parallaxBackgroundImage":"images/Poster_quer_Hintergrund.jpg","parallaxBackgroundSize":"100% 100%","parallaxBackgroundHorizontal":0,"parallaxBackgroundVertical":0}
+  var pluginsOptions = {plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]}
   var initializeOptions = {};
   extend(initializeOptions, baseOptions);
   extend(initializeOptions, configOptions);
+  extend(initializeOptions, pluginsOptions);
   Reveal.initialize(initializeOptions);
 })();
 
