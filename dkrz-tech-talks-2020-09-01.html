@@ -724,7 +724,9 @@ Using Anaconda, anyone can install and run Jupyter Notebooks on their local comp
 <script src="reveal.js/dist/reveal.esm.js" type="module"></script>
 
 
-<script>
+<script type="module">
+  import Reveal from 'reveal.js/dist/reveal.esm.js';
+  import Markdown from 'plugin/markdown/markdown.esm.js';
   (function() {
   function extend( a, b ) {
     for(var i in b) {
