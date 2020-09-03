@@ -736,10 +736,9 @@ Using Anaconda, anyone can install and run Jupyter Notebooks on their local comp
     hash: true,
     dependencies: [
       { src: 'reveal.js/plugin/markdown/markdown.js' },
-      { src: 'reveal.js/plugin/highlight/highlight.js' },
+      { src: 'reveal.js/plugin/highlight/highlight.js', async: true },
       { src: 'reveal.js/plugin/notes/notes.js', async: true }
-    ],
-    plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+    ]
   };
 
 
