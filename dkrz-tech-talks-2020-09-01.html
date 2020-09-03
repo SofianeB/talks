@@ -721,12 +721,10 @@ Using Anaconda, anyone can install and run Jupyter Notebooks on their local comp
   </div>
 </div>
 
-<script src="reveal.js/dist/reveal.esm.js" type="module"></script>
+<script src="reveal.js/dist/reveal.js"></script>
 
 
-<script type="module">
-  import Reveal from 'reveal.js/dist/reveal.esm.js';
-  import Markdown from 'plugin/markdown/markdown.esm.js';
+<script>
   (function() {
   function extend( a, b ) {
     for(var i in b) {
@@ -737,7 +735,7 @@ Using Anaconda, anyone can install and run Jupyter Notebooks on their local comp
     transition: 'no',
     hash: true,
     dependencies: [
-      { src: 'reveal.js/plugin/markdown/markdown.esm.js' },
+      { src: 'reveal.js/plugin/markdown/markdown.js' },
       { src: 'reveal.js/plugin/highlight/highlight.js' },
       { src: 'reveal.js/plugin/notes/notes.js', async: true }
     ]
